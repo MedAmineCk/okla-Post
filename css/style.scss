@@ -1,0 +1,145 @@
+@import "./variables";
+@import "./default";
+
+#element {
+    width: 800px;
+    height: 800px;
+    background: colors(p);
+    margin: 0 auto;
+    padding: 20px 40px;
+    position: relative;
+
+    .up {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+
+        hr {
+            width: 50%;
+            border: none;
+            height: 1px;
+            background: white;
+        }
+
+        input {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            border: none;
+            background: colors(p);
+            color: white;
+            padding: 0 20px;
+            text-align: center;
+            width: 180px;
+            font-size: 22px;
+        }
+    }
+
+    .title {
+        width: 100%;
+        height: 120px;
+
+        input {
+            resize: none;
+            width: 100%;
+            text-align: center;
+            font-size: 35px;
+            background: colors(p);
+            color: white;
+        }
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: 400px;
+        background: pink;
+        background-image: url(../img/bg.jpg);
+        background-size: cover;
+        border-radius: 12px;
+        position: relative;
+    }
+
+    .links {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #880E4F;
+
+        .item {
+            display: flex;
+            align-items: center;
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                background: white;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: colors(p);
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .icon-okla {
+        $size: 100px;
+        background: white;
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+        bottom: 100px;
+    }
+
+    .emojis {
+        $size: 150px;
+        width: $size;
+        height: $size;
+        position: absolute;
+        left: 20px;
+        bottom: 60px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+#save {
+    border: 2px solid #880E4F;
+    background: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #880E4F;
+    font-size: 22px;
+    font-weight: normal;
+    outline: none;
+
+    &:hover {
+        background: #880E4F;
+        color: white;
+        transition: all linear .2s;
+    }
+}
+
+.file_drag_over {
+    filter: blur(8px);
+    transition: all linear .2s;
+}

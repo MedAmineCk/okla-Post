@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/canvas2image.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="https://kit.fontawesome.com/b4fd4fabf4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="element">
+        <div class="up">
+            <hr>
+            <input type="text" value="OKLA - أكلة">
+        </div>
+        <div class="title">
+            <input value="أكتب هنا عنوان للمنشور">
+        </div>
+        <div class="thumbnail drop-area file_drag_area">
+        </div>
+        <div class="links">
+            <div class="item">
+                <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                <div class="label">facebook.com/oklaton</div>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fab fa-instagram"></i></div>
+                <div class="label">instagram/oklatona</div>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fab fa-internet-explorer"></i></div>
+                <div class="label">oklaton.com</div>
+            </div>
+        </div>
+
+        <div class="icon-okla">
+            <img src="img/icon.svg">
+        </div>
+        <div class="emojis">
+            <img src="img/emoji.png">
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <button id="save">save as Image</button>
+        <p id="preview"></p>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/drag&drop.js"></script>
+</body>
+
+</html>

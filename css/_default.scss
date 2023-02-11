@@ -1,0 +1,27 @@
+//******** Def ********//
+body {
+    width: 100%;
+    max-width: 1366px;
+    background: #ffffff;
+    margin: 0 auto;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    border: none
+}
